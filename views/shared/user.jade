@@ -17,7 +17,7 @@ li
 
     li.location Location: #{user.location}
       a( href="http://maps.google.com/maps?&amp;q=" + (user.coords || user.location), title="Show it on a big map" )
-        img( src="http://maps.google.com/maps/api/staticmap?center=" + (user.coords || user.location) + "&amp;zoom=14&amp;size=175x175&amp;maptype=roadmap&amp;sensor=false", width="175", height="175" )
+        img( src="http://maps.googleapis.com/maps/api/staticmap?center=" + (user.coords || user.location) + "&amp;zoom=14&amp;size=175x175&amp;maptype=roadmap&amp;sensor=false", width="175", height="175" )
 
     - if ( user.occupation )
       li.occupation Occupation: 
